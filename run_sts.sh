@@ -14,7 +14,7 @@ if [ ! -d $GLUE_DIR ]; then
     rm $STS_ZIP
 fi
 
-if [ ! -d MODELS ]; then
+if [ ! -d $MODELS ]; then
     mkdir $MODELS
     curl -o ${BERT_BASE_DIR}.zip $MODEL_URL
     unzip ${BERT_BASE_DIR}.zip -d $MODELS
